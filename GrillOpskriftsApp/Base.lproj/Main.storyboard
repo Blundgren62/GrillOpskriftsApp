@@ -33,10 +33,10 @@
             </objects>
             <point key="canvasLocation" x="1077.5999999999999" y="74.212893553223395"/>
         </scene>
-        <!--View Controller-->
+        <!--ThoughtVC-->
         <scene sceneID="ejl-Rk-vYR">
             <objects>
-                <viewController id="9jD-NT-Bva" sceneMemberID="viewController">
+                <viewController id="9jD-NT-Bva" customClass="ThoughtVC" customModule="GrillOpskriftsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pdc-5P-dQi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,6 +100,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wcF-Mh-dsb"/>
                     </view>
+                    <connections>
+                        <outlet property="categorySelected" destination="7zH-AP-IuU" id="aFM-42-X1Y"/>
+                        <outlet property="pushBtn" destination="6QJ-XH-x6d" id="NCV-S8-TsF"/>
+                        <outlet property="thoughtTxt" destination="Sjb-RY-eGW" id="WkR-ZH-0qX"/>
+                        <outlet property="usernameTxt" destination="DYn-My-2VG" id="TiU-6A-igJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A99-Z3-T30" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

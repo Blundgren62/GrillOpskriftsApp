@@ -13,6 +13,7 @@
 		4D690FAD2294864200B43850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D690FAC2294864200B43850 /* Assets.xcassets */; };
 		4D690FB02294864200B43850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D690FAE2294864200B43850 /* LaunchScreen.storyboard */; };
 		4D690FB82294869B00B43850 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D690FB72294869B00B43850 /* GoogleService-Info.plist */; };
+		4D7C21B522950A620085803D /* ThoughtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C21B422950A620085803D /* ThoughtVC.swift */; };
 		AB829FC96D9825C68E06C570 /* Pods_GrillOpskriftsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09449EB1F8D694D9AEB1053D /* Pods_GrillOpskriftsApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		4D690FAF2294864200B43850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D690FB12294864200B43850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D690FB72294869B00B43850 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4D7C21B422950A620085803D /* ThoughtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtVC.swift; sourceTree = "<group>"; };
 		98EAE0A2F4784914BF8B28CC /* Pods-GrillOpskriftsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrillOpskriftsApp.debug.xcconfig"; path = "Target Support Files/Pods-GrillOpskriftsApp/Pods-GrillOpskriftsApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				4D690FA72294864000B43850 /* MainVC.swift */,
+				4D7C21B422950A620085803D /* ThoughtVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			files = (
 				4D690FA82294864000B43850 /* MainVC.swift in Sources */,
 				4D690FA62294864000B43850 /* AppDelegate.swift in Sources */,
+				4D7C21B522950A620085803D /* ThoughtVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
