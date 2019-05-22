@@ -12,9 +12,13 @@
 		4D690FAB2294864000B43850 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D690FA92294864000B43850 /* Main.storyboard */; };
 		4D690FAD2294864200B43850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D690FAC2294864200B43850 /* Assets.xcassets */; };
 		4D690FB02294864200B43850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D690FAE2294864200B43850 /* LaunchScreen.storyboard */; };
+		4D690FB82294869B00B43850 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D690FB72294869B00B43850 /* GoogleService-Info.plist */; };
+		AB829FC96D9825C68E06C570 /* Pods_GrillOpskriftsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09449EB1F8D694D9AEB1053D /* Pods_GrillOpskriftsApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09449EB1F8D694D9AEB1053D /* Pods_GrillOpskriftsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrillOpskriftsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49F23064A23DBF79F097FEB4 /* Pods-GrillOpskriftsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrillOpskriftsApp.release.xcconfig"; path = "Target Support Files/Pods-GrillOpskriftsApp/Pods-GrillOpskriftsApp.release.xcconfig"; sourceTree = "<group>"; };
 		4D690FA22294864000B43850 /* GrillOpskriftsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrillOpskriftsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D690FA52294864000B43850 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D690FA72294864000B43850 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		4D690FAC2294864200B43850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D690FAF2294864200B43850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D690FB12294864200B43850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D690FB72294869B00B43850 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		98EAE0A2F4784914BF8B28CC /* Pods-GrillOpskriftsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrillOpskriftsApp.debug.xcconfig"; path = "Target Support Files/Pods-GrillOpskriftsApp/Pods-GrillOpskriftsApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB829FC96D9825C68E06C570 /* Pods_GrillOpskriftsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				4D690FA42294864000B43850 /* GrillOpskriftsApp */,
 				4D690FA32294864000B43850 /* Products */,
+				A28BDE97DF0CD1CEF6C6EBBA /* Pods */,
+				5912C1486E08234B8C0A57BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +63,56 @@
 		4D690FA42294864000B43850 /* GrillOpskriftsApp */ = {
 			isa = PBXGroup;
 			children = (
+				4DFDF0EE22948A30006FE3E8 /* New Group */,
+				4DFDF0ED22948A26006FE3E8 /* Controllers */,
+				4DFDF0EC22948A19006FE3E8 /* Model */,
 				4D690FA52294864000B43850 /* AppDelegate.swift */,
 				4D690FA72294864000B43850 /* ViewController.swift */,
 				4D690FA92294864000B43850 /* Main.storyboard */,
 				4D690FAC2294864200B43850 /* Assets.xcassets */,
 				4D690FAE2294864200B43850 /* LaunchScreen.storyboard */,
 				4D690FB12294864200B43850 /* Info.plist */,
+				4D690FB72294869B00B43850 /* GoogleService-Info.plist */,
 			);
 			path = GrillOpskriftsApp;
+			sourceTree = "<group>";
+		};
+		4DFDF0EC22948A19006FE3E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4DFDF0ED22948A26006FE3E8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4DFDF0EE22948A30006FE3E8 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		5912C1486E08234B8C0A57BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09449EB1F8D694D9AEB1053D /* Pods_GrillOpskriftsApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A28BDE97DF0CD1CEF6C6EBBA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98EAE0A2F4784914BF8B28CC /* Pods-GrillOpskriftsApp.debug.xcconfig */,
+				49F23064A23DBF79F097FEB4 /* Pods-GrillOpskriftsApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D690FB42294864200B43850 /* Build configuration list for PBXNativeTarget "GrillOpskriftsApp" */;
 			buildPhases = (
+				EACB8EFEF6D9F3276FCE9B4A /* [CP] Check Pods Manifest.lock */,
 				4D690F9E2294864000B43850 /* Sources */,
 				4D690F9F2294864000B43850 /* Frameworks */,
 				4D690FA02294864000B43850 /* Resources */,
+				A93789505CE47C7FDB61D5B1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +176,72 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D690FB02294864200B43850 /* LaunchScreen.storyboard in Resources */,
+				4D690FB82294869B00B43850 /* GoogleService-Info.plist in Resources */,
 				4D690FAD2294864200B43850 /* Assets.xcassets in Resources */,
 				4D690FAB2294864000B43850 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A93789505CE47C7FDB61D5B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrillOpskriftsApp/Pods-GrillOpskriftsApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GrillOpskriftsApp/Pods-GrillOpskriftsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EACB8EFEF6D9F3276FCE9B4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GrillOpskriftsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D690F9E2294864000B43850 /* Sources */ = {
@@ -280,6 +393,7 @@
 		};
 		4D690FB52294864200B43850 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98EAE0A2F4784914BF8B28CC /* Pods-GrillOpskriftsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +412,7 @@
 		};
 		4D690FB62294864200B43850 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49F23064A23DBF79F097FEB4 /* Pods-GrillOpskriftsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
