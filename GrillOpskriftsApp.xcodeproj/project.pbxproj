@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4D690FA62294864000B43850 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D690FA52294864000B43850 /* AppDelegate.swift */; };
-		4D690FA82294864000B43850 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D690FA72294864000B43850 /* ViewController.swift */; };
+		4D690FA82294864000B43850 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D690FA72294864000B43850 /* MainVC.swift */; };
 		4D690FAB2294864000B43850 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D690FA92294864000B43850 /* Main.storyboard */; };
 		4D690FAD2294864200B43850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D690FAC2294864200B43850 /* Assets.xcassets */; };
 		4D690FB02294864200B43850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D690FAE2294864200B43850 /* LaunchScreen.storyboard */; };
@@ -21,7 +21,7 @@
 		49F23064A23DBF79F097FEB4 /* Pods-GrillOpskriftsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrillOpskriftsApp.release.xcconfig"; path = "Target Support Files/Pods-GrillOpskriftsApp/Pods-GrillOpskriftsApp.release.xcconfig"; sourceTree = "<group>"; };
 		4D690FA22294864000B43850 /* GrillOpskriftsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrillOpskriftsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D690FA52294864000B43850 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4D690FA72294864000B43850 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4D690FA72294864000B43850 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		4D690FAA2294864000B43850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D690FAC2294864200B43850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D690FAF2294864200B43850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,7 +67,6 @@
 				4DFDF0ED22948A26006FE3E8 /* Controllers */,
 				4DFDF0EC22948A19006FE3E8 /* Model */,
 				4D690FA52294864000B43850 /* AppDelegate.swift */,
-				4D690FA72294864000B43850 /* ViewController.swift */,
 				4D690FA92294864000B43850 /* Main.storyboard */,
 				4D690FAC2294864200B43850 /* Assets.xcassets */,
 				4D690FAE2294864200B43850 /* LaunchScreen.storyboard */,
@@ -87,6 +86,7 @@
 		4DFDF0ED22948A26006FE3E8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4D690FA72294864000B43850 /* MainVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -248,7 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D690FA82294864000B43850 /* ViewController.swift in Sources */,
+				4D690FA82294864000B43850 /* MainVC.swift in Sources */,
 				4D690FA62294864000B43850 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
