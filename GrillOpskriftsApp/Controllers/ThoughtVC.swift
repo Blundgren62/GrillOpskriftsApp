@@ -27,6 +27,17 @@ class ThoughtVC: UIViewController, UITextViewDelegate {
         // Do any additional setup after loading the view.
     }
     
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        thoughtTxt.text = ""
+        thoughtTxt.textColor = .darkGray
+    }
+    
+    @IBAction func categoryCanged(_ sender: Any) {
+    }
+    
+    @IBAction func pushBtnTapped(_ sender: Any) {
+    }
+    
 
     /*
     // MARK: - Navigation

@@ -52,6 +52,9 @@
                                     <segment title="Crazy"/>
                                 </segments>
                                 <color key="tintColor" red="0.68995541329999999" green="0.1486132741" blue="0.20334178210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="categoryCanged:" destination="9jD-NT-Bva" eventType="valueChanged" id="CSe-Vo-DRf"/>
+                                </connections>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DYn-My-2VG">
                                 <rect key="frame" x="20" y="116" width="335" height="17"/>
@@ -82,6 +85,9 @@
                                 <state key="normal" title="Push">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="pushBtnTapped:" destination="9jD-NT-Bva" eventType="touchUpInside" id="JHo-kg-tJw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
