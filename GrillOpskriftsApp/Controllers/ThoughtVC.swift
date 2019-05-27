@@ -7,15 +7,19 @@
 //
 
 import UIKit
+import Firebase
 
 class ThoughtVC: UIViewController, UITextViewDelegate {
+    
+    //Outlets
     
     @IBOutlet weak var categorySelected: UISegmentedControl!
     @IBOutlet weak var usernameTxt: UITextField!
     @IBOutlet weak var thoughtTxt: UITextView!
     @IBOutlet weak var pushBtn: UIButton!
     
-    
+    //Variables
+    private var selectedCategory = "funny"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +40,20 @@ class ThoughtVC: UIViewController, UITextViewDelegate {
     }
     
     @IBAction func pushBtnTapped(_ sender: Any) {
+        Firestore.firestore().collection("thought").addDocument(data: [
+            "category" : selectedCategory,
+            "numComments" : 0,
+            "numLikes" : 0,
+            "thoughtTxt" : thoughtTxt.text!,
+            "dateStamps" : FieldValue.serverTimestamp(),
+            "userNameTxt" : usernameTxt.text!
+        ]) { (err) in
+            if let err = err {
+                debugPrint("Der er fejl på denne: \(err)")
+            } else {
+                self.navigationController?.popViewController(animated: true)
+            }
+        }
     }
     
 
