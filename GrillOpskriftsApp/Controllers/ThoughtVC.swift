@@ -9,7 +9,12 @@
 import UIKit
 import Firebase
 
+
+
+
 class ThoughtVC: UIViewController, UITextViewDelegate {
+    
+
     
     //Outlets
     
@@ -19,34 +24,42 @@ class ThoughtVC: UIViewController, UITextViewDelegate {
     @IBOutlet weak var pushBtn: UIButton!
     
     //Variables
-    private var selectedCategory = "funny"
+    private var selectedCategory = ThoughtCategory.funny.rawValue
 
     override func viewDidLoad() {
         super.viewDidLoad()
         usernameTxt.layer.cornerRadius = 4
         thoughtTxt.layer.cornerRadius = 4
-        thoughtTxt.textColor = .lightGray
+        thoughtTxt.text = "Skriv noget her"
+        thoughtTxt.textColor = UIColor.lightGray
         thoughtTxt.delegate = self
 
         // Do any additional setup after loading the view.
     }
     
     func textViewDidBeginEditing(_ textView: UITextView) {
-        thoughtTxt.text = ""
-        thoughtTxt.textColor = .darkGray
+        textView.text = ""
+        textView.textColor = UIColor.darkGray
     }
     
     @IBAction func categoryCanged(_ sender: Any) {
+        switch categorySelected.selectedSegmentIndex {
+        case 0: selectedCategory = ThoughtCategory.funny.rawValue
+        case 1: selectedCategory = ThoughtCategory.serious.rawValue
+        default:
+            selectedCategory = ThoughtCategory.crazy.rawValue
+        }
     }
     
     @IBAction func pushBtnTapped(_ sender: Any) {
-        Firestore.firestore().collection("thought").addDocument(data: [
-            "category" : selectedCategory,
-            "numComments" : 0,
-            "numLikes" : 0,
-            "thoughtTxt" : thoughtTxt.text!,
-            "dateStamps" : FieldValue.serverTimestamp(),
-            "userNameTxt" : usernameTxt.text!
+        guard let username = usernameTxt.text else { return }
+        Firestore.firestore().collection(THOUGHTS_REF).addDocument(data: [
+            CATEGORY : selectedCategory,
+            NUM_COMMENTS : 0,
+            NUM_LIKES : 0,
+            THOUGHT_TXT : thoughtTxt.text!,
+            TIMESTAMP : FieldValue.serverTimestamp(),
+            USERNAME : username
         ]) { (err) in
             if let err = err {
                 debugPrint("Der er fejl på denne: \(err)")
