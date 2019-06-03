@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4D05EC2122A3AAB30082C3C6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D05EC2022A3AAB30082C3C6 /* Constants.swift */; };
+		4D05EC2522A3BCA90082C3C6 /* Thought.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D05EC2422A3BCA90082C3C6 /* Thought.swift */; };
+		4D05EC2722A3C0440082C3C6 /* ThoughtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D05EC2622A3C0440082C3C6 /* ThoughtCell.swift */; };
 		4D690FA62294864000B43850 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D690FA52294864000B43850 /* AppDelegate.swift */; };
 		4D690FA82294864000B43850 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D690FA72294864000B43850 /* MainVC.swift */; };
 		4D690FAB2294864000B43850 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D690FA92294864000B43850 /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 		09449EB1F8D694D9AEB1053D /* Pods_GrillOpskriftsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrillOpskriftsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49F23064A23DBF79F097FEB4 /* Pods-GrillOpskriftsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrillOpskriftsApp.release.xcconfig"; path = "Target Support Files/Pods-GrillOpskriftsApp/Pods-GrillOpskriftsApp.release.xcconfig"; sourceTree = "<group>"; };
 		4D05EC2022A3AAB30082C3C6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4D05EC2422A3BCA90082C3C6 /* Thought.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thought.swift; sourceTree = "<group>"; };
+		4D05EC2622A3C0440082C3C6 /* ThoughtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtCell.swift; sourceTree = "<group>"; };
 		4D690FA22294864000B43850 /* GrillOpskriftsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrillOpskriftsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D690FA52294864000B43850 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D690FA72294864000B43850 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -68,7 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				4DF6CF3822A3A9B100B81F7A /* Utilities */,
-				4DFDF0EE22948A30006FE3E8 /* New Group */,
+				4DFDF0EE22948A30006FE3E8 /* Views */,
 				4DFDF0ED22948A26006FE3E8 /* Controllers */,
 				4DFDF0EC22948A19006FE3E8 /* Model */,
 				4D690FA52294864000B43850 /* AppDelegate.swift */,
@@ -92,6 +96,7 @@
 		4DFDF0EC22948A19006FE3E8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4D05EC2422A3BCA90082C3C6 /* Thought.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -105,11 +110,12 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		4DFDF0EE22948A30006FE3E8 /* New Group */ = {
+		4DFDF0EE22948A30006FE3E8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4D05EC2622A3C0440082C3C6 /* ThoughtCell.swift */,
 			);
-			path = "New Group";
+			path = Views;
 			sourceTree = "<group>";
 		};
 		5912C1486E08234B8C0A57BD /* Frameworks */ = {
@@ -263,7 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D690FA82294864000B43850 /* MainVC.swift in Sources */,
+				4D05EC2522A3BCA90082C3C6 /* Thought.swift in Sources */,
 				4D690FA62294864000B43850 /* AppDelegate.swift in Sources */,
+				4D05EC2722A3C0440082C3C6 /* ThoughtCell.swift in Sources */,
 				4D7C21B522950A620085803D /* ThoughtVC.swift in Sources */,
 				4D05EC2122A3AAB30082C3C6 /* Constants.swift in Sources */,
 			);
