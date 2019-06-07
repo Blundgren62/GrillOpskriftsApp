@@ -24,7 +24,9 @@ class ThoughtCell: UITableViewCell {
     }
 
     func configureCell(thought: Thought) {
-        
+        usernameLbl.text = thought.username
+        thoughtTxtLbl.text = thought.thoughtTxt
+        likesNumLbl.text = String(thought.numLikes)
     }
 
 }
